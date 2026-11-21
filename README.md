@@ -1,4 +1,4 @@
-![Mistral Mind — Screenshot 1](./Mistral_Mind_10.jpg)
+![Mistral Mind — Screenshot 1](./Mistral_Mind_1.jpg)
 
 ![Mistral Mind — Screenshot 2](./Mistral_Mind_2.jpg)
 
