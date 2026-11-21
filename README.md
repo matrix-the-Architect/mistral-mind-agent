@@ -31,6 +31,24 @@ Screen pixels and memory encryption keys stay in the browser. **Approved text pa
 | Demo evidence | Shows local vault inspection, actual server memory counts, and scoped erasure results. |
 | Optional read-aloud | Reads responses using an available local browser speech voice. |
 
+![Mistral Mind — Screenshot 1](./Mistral_Mind_8.jpg)
+
+![Mistral Mind — Screenshot 2](./Mistral_Mind_9.jpg)
+
+![Mistral Mind — Screenshot 3](./Mistral_Mind_10.jpg)
+
+![Mistral Mind — Screenshot 4](./Mistral_Mind_11.jpg)
+
+![Mistral Mind — Screenshot 5](./Mistral_Mind_12.jpg)
+
+![Mistral Mind — Screenshot 6](./Mistral_Mind_13.jpg)
+
+![Mistral Mind — Screenshot 7](./Mistral_Mind_14.jpg)
+
+![Mistral Mind — Screenshot 6](./Mistral_Mind_15.jpg)
+
+![Mistral Mind — Screenshot 7](./Mistral_Mind_16.jpg)
+
 ## Quick start
 
 ### Prerequisites
