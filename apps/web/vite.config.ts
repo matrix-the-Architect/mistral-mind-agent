@@ -73,7 +73,11 @@ export default defineConfig(async ({ mode }) => ({
     ),
   },
   server: {
+    // Fixed frontend port with strict checking: IndexedDB is origin-scoped, so the app must
+    // always come back on the same origin (http://localhost:3001) for the encrypted vault to
+    // be reachable across restarts.
     port: 3001,
+    strictPort: true,
   },
   resolve: {
     tsconfigPaths: true,

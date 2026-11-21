@@ -17,9 +17,11 @@
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "tailwindcss": "^4.3.3",
+    "tesseract.js": "^7.0.0",
     "zod": "^4.6.6"
   },
   "devDependencies": {
+    "@tesseract.js-data/eng": "^1.0.0",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/react": "^16.3.3",
     "@types/react": "^19.3.0",

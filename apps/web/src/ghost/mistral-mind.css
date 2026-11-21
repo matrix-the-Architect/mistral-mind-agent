@@ -1,0 +1,134 @@
+/**
+ * Alternate "mistral mind" UI styling. EVERY rule is scoped under `.mistral-mind-page` so nothing
+ * here can leak into the original `/ghost` page (which keeps using ghost.css alone). Palette:
+ * bg #FAF6F0, surface #FFFDFA, text #211D18, secondary #70685D, border #E5DCCF, primary orange
+ * #FF7000 (hover #E85D00), yellow accent #FFD42A, destructive #A73124. Dark text on orange.
+ */
+
+.mistral-mind-page {
+  --mm-bg: #faf6f0;
+  --mm-surface: #fffdfA;
+  --mm-text: #211d18;
+  --mm-text-secondary: #70685d;
+  --mm-border: #e5dccf;
+  --mm-orange: #ff7000;
+  --mm-orange-hover: #e85d00;
+  --mm-yellow: #ffd42a;
+  --mm-destructive: #a73124;
+
+  background: var(--mm-bg);
+  color: var(--mm-text);
+  min-height: 100vh;
+}
+
+.mistral-mind-page .ghost-header h1 {
+  color: var(--mm-text);
+}
+
+.mistral-mind-page .mm-original-link {
+  margin: 0.25rem 0 0.5rem;
+}
+
+.mistral-mind-page .mm-original-link a {
+  color: var(--mm-orange);
+  font-weight: 600;
+}
+
+/* Top "User input" section: only the label and the full-width multiline textbox. */
+.mistral-mind-page .mm-input-panel {
+  background: var(--mm-surface);
+  border: 1px solid var(--mm-border);
+  border-radius: 10px;
+}
+
+.mistral-mind-page .mm-input-label {
+  display: block;
+  font-weight: 700;
+  color: var(--mm-text);
+  margin-bottom: 0.4rem;
+}
+
+.mistral-mind-page .mm-input {
+  width: 100%;
+  min-height: 140px;
+  box-sizing: border-box;
+  background: var(--mm-surface);
+  color: var(--mm-text);
+  border: 1px solid var(--mm-border);
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  font: inherit;
+}
+
+.mistral-mind-page .mm-input:focus-visible {
+  outline: 3px solid var(--mm-yellow);
+  outline-offset: 1px;
+  border-color: var(--mm-orange);
+}
+
+/* Composer toolbar: "Use a memory" left; "Forget me" + "Review & send" right, wrapping on mobile. */
+.mistral-mind-page .mm-composer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0.6rem 0;
+}
+
+.mistral-mind-page .mm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.mistral-mind-page .mm-use-memory,
+.mistral-mind-page .mm-forget,
+.mistral-mind-page .mm-send {
+  min-height: 44px;
+  padding: 0.55rem 1.1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.mistral-mind-page .mm-use-memory {
+  background: var(--mm-surface);
+  color: var(--mm-text);
+  border: 1px solid var(--mm-border);
+}
+
+.mistral-mind-page .mm-forget {
+  background: transparent;
+  color: var(--mm-destructive);
+  border: 2px solid var(--mm-destructive);
+}
+
+.mistral-mind-page .mm-forget:hover:not(:disabled) {
+  background: #a73124;
+  color: #fffdfA;
+}
+
+.mistral-mind-page .mm-send {
+  background: var(--mm-orange);
+  color: var(--mm-text); /* dark text on orange, per spec */
+  border: 1px solid var(--mm-orange-hover);
+}
+
+.mistral-mind-page .mm-send:hover:not(:disabled) {
+  background: var(--mm-orange-hover);
+}
+
+.mistral-mind-page .mm-use-memory:focus-visible,
+.mistral-mind-page .mm-forget:focus-visible,
+.mistral-mind-page .mm-send:focus-visible {
+  outline: 3px solid var(--mm-yellow);
+  outline-offset: 2px;
+}
+
+.mistral-mind-page button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}

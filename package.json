@@ -15,6 +15,7 @@
   "scripts": {
     "build": "nx run-many --target=build",
     "test": "nx run-many --target=test",
+    "dev": "bash tools/dev.sh",
     "dev:web": "nx run web:dev",
     "check": "nx run-many --target=build && nx run-many --target=check",
     "install-all": "bash tools/install.sh",
