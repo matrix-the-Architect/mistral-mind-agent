@@ -1,4 +1,20 @@
-# mistral mind
+# Mistral Mind
+
+## Screenshots
+
+![Mistral Mind — Screenshot 1](./Mistral_Mind_1.jpg)
+
+![Mistral Mind — Screenshot 2](./Mistral_Mind_2.jpg)
+
+![Mistral Mind — Screenshot 3](./Mistral_Mind_3.jpg)
+
+![Mistral Mind — Screenshot 4](./Mistral_Mind_4.jpg)
+
+![Mistral Mind — Screenshot 5](./Mistral_Mind_5.jpg)
+
+![Mistral Mind — Screenshot 6](./Mistral_Mind_6.jpg)
+
+![Mistral Mind — Screenshot 7](./Mistral_Mind_7.jpg)
 
 **A Mistral-powered work companion with browser-encrypted memory, local screen-text extraction, and a visible Forget Me workflow.**
 
